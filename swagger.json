@@ -7,7 +7,7 @@
     "termsOfService": "http://www.ringcentral.com/legal/eulatos.html"
   },
   "host": "platform.devtest.ringcentral.com",
-  "basePath": "/",
+  "basePath": "/restapi",
   "schemes": [
     "https"
   ],
@@ -3356,7 +3356,7 @@
     }
   },
   "paths": {
-    "/restapi": {
+    "/": {
       "get": {
         "description": "Get Server Info",
         "responses": {
@@ -3369,7 +3369,7 @@
         }
       }
     },
-    "/restapi/oauth/authorize": {
+    "/oauth/authorize": {
       "post": {
         "description": "OAuth2 Authorize",
         "responses": {
@@ -3423,7 +3423,7 @@
         ]
       }
     },
-    "/restapi/oauth/revoke": {
+    "/oauth/revoke": {
       "post": {
         "description": "OAuth2 Revoke Token",
         "responses": {
@@ -3448,7 +3448,7 @@
         ]
       }
     },
-    "/restapi/oauth/token": {
+    "/oauth/token": {
       "post": {
         "description": "OAuth2 Get Token",
         "responses": {
@@ -3538,7 +3538,7 @@
         ]
       }
     },
-    "/restapi/v1.0": {
+    "/v1.0": {
       "get": {
         "description": "Get API Version Info",
         "responses": {
@@ -3551,7 +3551,7 @@
         }
       }
     },
-    "/restapi/v1.0/account/{accountId}": {
+    "/v1.0/account/{accountId}": {
       "get": {
         "description": "Get Account Info by ID",
         "responses": {
@@ -3569,7 +3569,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/active-calls": {
+    "/v1.0/account/{accountId}/active-calls": {
       "get": {
         "description": "Get Account Active (Recent) Calls",
         "responses": {
@@ -3636,7 +3636,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/business-address": {
+    "/v1.0/account/{accountId}/business-address": {
       "get": {
         "description": "Get Company Business Address",
         "responses": {
@@ -3721,7 +3721,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/call-log": {
+    "/v1.0/account/{accountId}/call-log": {
       "get": {
         "description": "Get Account Call Log",
         "responses": {
@@ -3830,7 +3830,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/call-log/{callLogId}": {
+    "/v1.0/account/{accountId}/call-log/{callLogId}": {
       "get": {
         "description": "Get Account Call Log Record by ID",
         "responses": {
@@ -3851,7 +3851,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/department/{departmentId}/members": {
+    "/v1.0/account/{accountId}/department/{departmentId}/members": {
       "get": {
         "description": "Get Department Members",
         "responses": {
@@ -3901,7 +3901,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/device": {
+    "/v1.0/account/{accountId}/device": {
       "get": {
         "description": "Get Account Device List",
         "responses": {
@@ -3934,7 +3934,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/device/{deviceId}": {
+    "/v1.0/account/{accountId}/device/{deviceId}": {
       "get": {
         "description": "Get Device by ID",
         "responses": {
@@ -3955,7 +3955,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension": {
+    "/v1.0/account/{accountId}/extension": {
       "get": {
         "description": "Get Extension List",
         "responses": {
@@ -4034,7 +4034,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}": {
       "get": {
         "description": "Get Extension Info by ID",
         "responses": {
@@ -4092,7 +4092,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/active-calls": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/active-calls": {
       "get": {
         "description": "Get Extension Active (Recent) Calls",
         "responses": {
@@ -4162,7 +4162,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/address-book-sync": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/address-book-sync": {
       "get": {
         "description": "Contacts Synchronization",
         "responses": {
@@ -4233,7 +4233,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/address-book/contact": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/address-book/contact": {
       "post": {
         "description": "Create New Contact",
         "responses": {
@@ -4320,7 +4320,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/address-book/contact/{contactId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/address-book/contact/{contactId}": {
       "delete": {
         "description": "Delete Contact by ID",
         "responses": {
@@ -4372,7 +4372,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/address-book/group": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/address-book/group": {
       "get": {
         "description": "Get Contact Group List",
         "responses": {
@@ -4408,7 +4408,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/answering-rule/{answeringRuleId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/answering-rule/{answeringRuleId}": {
       "get": {
         "description": "Get Custom Answering Rule by ID",
         "responses": {
@@ -4432,7 +4432,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/blocked-number": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/blocked-number": {
       "post": {
         "description": "Add New Blocked Number",
         "responses": {
@@ -4488,7 +4488,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/blocked-number/{blockedNumberId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/blocked-number/{blockedNumberId}": {
       "delete": {
         "description": "Delete Blocked Number by ID",
         "responses": {
@@ -4540,7 +4540,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/business-hours": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/business-hours": {
       "get": {
         "description": "Get User Hours Setting",
         "responses": {
@@ -4570,7 +4570,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/call-log": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/call-log": {
       "delete": {
         "description": "Delete Extension Call Log",
         "responses": {
@@ -4699,7 +4699,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/call-log-sync": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/call-log-sync": {
       "get": {
         "description": "Call Log Synchronization",
         "responses": {
@@ -4773,7 +4773,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/call-log/{callLogId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/call-log/{callLogId}": {
       "get": {
         "description": "Get Extension Call Log Record by ID",
         "responses": {
@@ -4797,7 +4797,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/company-pager": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/company-pager": {
       "post": {
         "description": "Create and Send Pager Message",
         "responses": {
@@ -4847,7 +4847,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/conferencing": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/conferencing": {
       "get": {
         "description": "Get Conferencing info",
         "responses": {
@@ -4909,7 +4909,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/device": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/device": {
       "get": {
         "description": "Get Extension Device List",
         "responses": {
@@ -4945,7 +4945,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/fax": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/fax": {
       "post": {
         "description": "Create and Send Fax Message",
         "responses": {
@@ -5009,7 +5009,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/forwarding-number": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/forwarding-number": {
       "post": {
         "description": "Add New Forwarding Number",
         "responses": {
@@ -5089,7 +5089,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/grant": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/grant": {
       "get": {
         "description": "Get Extension Grants",
         "responses": {
@@ -5139,7 +5139,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/message-store": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/message-store": {
       "get": {
         "description": "Get Message List",
         "responses": {
@@ -5266,7 +5266,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/message-store/{messageId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/message-store/{messageId}": {
       "delete": {
         "description": "Delete Message by ID",
         "responses": {
@@ -5343,7 +5343,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/message-store/{messageId}/content/{attachmentId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/message-store/{messageId}/content/{attachmentId}": {
       "get": {
         "description": "Get Message Attachment",
         "responses": {
@@ -5371,7 +5371,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/message-sync": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/message-sync": {
       "get": {
         "description": "Message Synchronization",
         "responses": {
@@ -5478,7 +5478,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/phone-number": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/phone-number": {
       "get": {
         "description": "Get Extension Phone Numbers",
         "responses": {
@@ -5542,7 +5542,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/presence": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/presence": {
       "get": {
         "description": "Get Extension Presence",
         "responses": {
@@ -5563,7 +5563,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/profile-image": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/profile-image": {
       "get": {
         "description": "Get Profile Image",
         "responses": {
@@ -5621,7 +5621,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/profile-image/{scaleSize}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/profile-image/{scaleSize}": {
       "get": {
         "description": "Get Scaled Profile Image",
         "responses": {
@@ -5646,7 +5646,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/ringout": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/ringout": {
       "post": {
         "description": "Initiate RingOut Call",
         "responses": {
@@ -5694,7 +5694,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/ringout/{ringoutId}": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/ringout/{ringoutId}": {
       "delete": {
         "description": "Cancel RingOut Call",
         "responses": {
@@ -5726,7 +5726,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/extension/{extensionId}/sms": {
+    "/v1.0/account/{accountId}/extension/{extensionId}/sms": {
       "post": {
         "description": "Create and Send SMS Message",
         "responses": {
@@ -5772,7 +5772,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/order": {
+    "/v1.0/account/{accountId}/order": {
       "post": {
         "description": "Create New Order",
         "responses": {
@@ -5817,7 +5817,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/order/{orderId}": {
+    "/v1.0/account/{accountId}/order/{orderId}": {
       "get": {
         "description": "Get Order by ID",
         "responses": {
@@ -5855,7 +5855,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/phone-number": {
+    "/v1.0/account/{accountId}/phone-number": {
       "get": {
         "description": "Get Account Phone Numbers",
         "responses": {
@@ -5916,7 +5916,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/phone-number/{phoneNumberId}": {
+    "/v1.0/account/{accountId}/phone-number/{phoneNumberId}": {
       "get": {
         "description": "Get Phone Number by ID",
         "responses": {
@@ -5937,7 +5937,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/recording/{recordingId}": {
+    "/v1.0/account/{accountId}/recording/{recordingId}": {
       "get": {
         "description": "Get Call Recording Metadata",
         "responses": {
@@ -5976,7 +5976,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/recording/{recordingId}/content": {
+    "/v1.0/account/{accountId}/recording/{recordingId}/content": {
       "get": {
         "description": "Get Call Recording Content",
         "responses": {
@@ -5998,7 +5998,7 @@
         }
       ]
     },
-    "/restapi/v1.0/account/{accountId}/service-info": {
+    "/v1.0/account/{accountId}/service-info": {
       "get": {
         "description": "Get Account Service Info",
         "responses": {
@@ -6040,7 +6040,7 @@
         }
       ]
     },
-    "/restapi/v1.0/client-info/custom-data/{customDataKey}": {
+    "/v1.0/client-info/custom-data/{customDataKey}": {
       "put": {
         "description": "Update Custom Data by Key",
         "responses": {
@@ -6098,7 +6098,7 @@
         }
       ]
     },
-    "/restapi/v1.0/dictionary/country": {
+    "/v1.0/dictionary/country": {
       "get": {
         "description": "Get Country List",
         "responses": {
@@ -6152,7 +6152,7 @@
         ]
       }
     },
-    "/restapi/v1.0/dictionary/country/{countryId}": {
+    "/v1.0/dictionary/country/{countryId}": {
       "get": {
         "description": "Get Country by ID",
         "responses": {
@@ -6170,7 +6170,7 @@
         }
       ]
     },
-    "/restapi/v1.0/dictionary/language": {
+    "/v1.0/dictionary/language": {
       "get": {
         "description": "Get Supported Language List",
         "responses": {
@@ -6198,7 +6198,7 @@
         }
       }
     },
-    "/restapi/v1.0/dictionary/language/{languageId}": {
+    "/v1.0/dictionary/language/{languageId}": {
       "get": {
         "description": "Get Language by ID",
         "responses": {
@@ -6216,7 +6216,7 @@
         }
       ]
     },
-    "/restapi/v1.0/dictionary/location": {
+    "/v1.0/dictionary/location": {
       "get": {
         "description": "Get Location List",
         "responses": {
@@ -6280,7 +6280,7 @@
         ]
       }
     },
-    "/restapi/v1.0/dictionary/state": {
+    "/v1.0/dictionary/state": {
       "get": {
         "description": "Get State/Province List",
         "responses": {
@@ -6334,7 +6334,7 @@
         ]
       }
     },
-    "/restapi/v1.0/dictionary/state/{stateId}": {
+    "/v1.0/dictionary/state/{stateId}": {
       "get": {
         "description": "Get State/Province by ID",
         "responses": {
@@ -6352,7 +6352,7 @@
         }
       ]
     },
-    "/restapi/v1.0/dictionary/timezone": {
+    "/v1.0/dictionary/timezone": {
       "get": {
         "description": "Get Time Zone List",
         "responses": {
@@ -6394,7 +6394,7 @@
         ]
       }
     },
-    "/restapi/v1.0/dictionary/timezone/{timezoneId}": {
+    "/v1.0/dictionary/timezone/{timezoneId}": {
       "get": {
         "description": "Get Time Zone by ID",
         "responses": {
@@ -6412,7 +6412,7 @@
         }
       ]
     },
-    "/restapi/v1.0/number-parser/parse": {
+    "/v1.0/number-parser/parse": {
       "post": {
         "description": "Parse Phone Number",
         "responses": {
@@ -6514,7 +6514,7 @@
         ]
       }
     },
-    "/restapi/v1.0/number-pool/lookup": {
+    "/v1.0/number-pool/lookup": {
       "post": {
         "description": "Look up Phone Number",
         "responses": {
@@ -6618,7 +6618,7 @@
         ]
       }
     },
-    "/restapi/v1.0/number-pool/reserve": {
+    "/v1.0/number-pool/reserve": {
       "post": {
         "description": "Reserve Phone Number",
         "responses": {
@@ -6658,7 +6658,7 @@
         ]
       }
     },
-    "/restapi/v1.0/subscription": {
+    "/v1.0/subscription": {
       "post": {
         "description": "Create New Subscription",
         "responses": {
@@ -6698,7 +6698,7 @@
         ]
       }
     },
-    "/restapi/v1.0/subscription/{subscriptionId}": {
+    "/v1.0/subscription/{subscriptionId}": {
       "delete": {
         "description": "Cancel Subscription by ID",
         "responses": {
