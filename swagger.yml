@@ -13,6 +13,14 @@ produces:
 - https
 consumes:
 - https
+securityDefinitions:
+  oauth:
+    type: oauth2
+    flow: accessCode
+    authorizationUrl: https://platform.devtest.ringcentral.com/restapi/oauth/authorize?response_type=code&redirect_uri=http://localhost:2015&client_id=33zQZlyQSPadH22cFIT0sw
+    tokenUrl: https://platform.devtest.ringcentral.com/restapi/oauth/token
+    scopes:
+      basic: the basic scope
 parameters:
   accountId:
     name: accountId
@@ -5047,4 +5055,3 @@ paths:
                 type: string
     parameters:
     - "$ref": "#/parameters/subscriptionId"
-
